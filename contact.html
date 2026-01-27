@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Crestline Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-bar">
+        <a class="brand" href="index.html">
+          <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
+          <span>Crestline Rentals</span>
+        </a>
+                <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+          <span>Theme</span>
+        </button>
+        <nav class="nav-panel" id="primary-nav" data-nav>
+          <ul class="nav-list">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="btn btn-primary" href="login.html">Login</a>
+            <a class="btn btn-primary" href="register.html">Sign Up</a></div>
+        </nav>
+        <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+          <span>Theme</span>
+        </button>
+      </div>
+      <div class="hero">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h1>Talk to a rental expert today.</h1>
+          <p>We respond fast with sizing guidance, delivery options, and custom quotes.</p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="#contact-form">Send a Message</a>
+            <a class="btn btn-outline" href="pricing.html">View Pricing</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-info">
+            <span class="badge">Concierge support</span>
+            <h3>Rapid help for sizing, swaps, and gear prep</h3>
+            <ul class="hero-list">
+              <li><i class="fa-solid fa-headset"></i> Sports support assurance on every rental</li>
+              <li><i class="fa-solid fa-bolt"></i> Fast response for gear issues and replacements</li>
+              <li><i class="fa-solid fa-person-chalkboard"></i> Expert consultation to tune equipment before pickup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Reach us</span>
+          <h2>Contact channels</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card centered hoverable">
+            <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
+            <h3>Phone</h3>
+            <p>+1 (415) 555-0145</p>
+          </article>
+          <article class="card centered hoverable">
+            <div class="icon-badge"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>support@crestlinerentals.com</p>
+          </article>
+          <article class="card centered hoverable">
+            <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Main hub</h3>
+            <p>450 Summit Avenue, Denver, CO</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact-form">
+      <div class="container section-grid">
+        <div>
+          <span class="eyebrow">Message us</span>
+          <h2>Send a rental request</h2>
+          <p>Tell us your destination, sport, and dates. We will reply with a tailored kit and quote.</p>
+        </div>
+        <form class="auth-card form-grid">
+          <div class="input-group">
+            <label for="name">Full name</label>
+            <input id="name" type="text" placeholder="Your name" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="you@example.com" />
+          </div>
+          <div class="input-group">
+            <label for="sport">Sport</label>
+            <select id="sport">
+              <option>Select a sport</option>
+              <option>Cycling</option>
+              <option>Snow</option>
+              <option>Water</option>
+              <option>Trail</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="message">Project details</label>
+            <textarea id="message" placeholder="Share dates, skill level, and delivery needs"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="button">Send Request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Map</span>
+          <h2>Visit our flagship hub</h2>
+        </div>
+        <iframe title="Crestline Rentals map" loading="lazy" src="https://maps.google.com/maps?q=Denver%20CO&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container section-grid">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1000&q=80" alt="Support team" loading="lazy" />
+        </div>
+        <div>
+          <span class="eyebrow">Support</span>
+          <h2>Need urgent assistance?</h2>
+          <p>Our 24/7 on-call team can coordinate emergency swaps and gear support.</p>
+          <div class="btn-group">
+            <a class="btn btn-outline" href="tel:+14155550145">Call Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Hours</span>
+          <h2>Pickup and delivery schedule</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card centered">
+            <div class="icon-badge"><i class="fa-solid fa-clock"></i></div>
+            <h3>Weekdays</h3>
+            <p>7:00 AM - 8:00 PM</p>
+          </article>
+          <article class="card centered">
+            <div class="icon-badge"><i class="fa-solid fa-sun"></i></div>
+            <h3>Weekends</h3>
+            <p>6:00 AM - 9:00 PM</p>
+          </article>
+          <article class="card centered">
+            <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Pickup zones</h3>
+            <p>Denver, Aspen, Salt Lake City, Seattle</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
+          <span>Crestline Rentals</span>
+        </a>
+        <p>Premium sports equipment rentals designed for high performance travel.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Gear Categories</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Cycling</a></li>
+          <li><a href="services.html">Snow</a></li>
+          <li><a href="services.html">Water</a></li>
+          <li><a href="services.html">Trail</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="service-details.html">Rental Policies</a></li>
+          <li><a href="login.html">Account Login</a></li>
+          <li><a href="register.html">Create Account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Crestline Rentals. All rights reserved.</p>
+      <div class="social">
+        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <a class="back-to-top" href="#top">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

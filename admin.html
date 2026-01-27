@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard | Crestline Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="admin-body" id="top">
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
+        <span>Crestline Rentals</span>
+      </a>
+      <ul class="admin-nav">
+        <li><a href="#analytics"><i class="fa-solid fa-chart-line"></i> Analytics</a></li>
+        <li><a href="#users"><i class="fa-solid fa-users"></i> Users</a></li>
+        <li><a href="#orders"><i class="fa-solid fa-box"></i> Orders</a></li>
+        <li><a href="#messages"><i class="fa-solid fa-envelope"></i> Messages</a></li>
+      </ul>
+      <div class="notice">
+        <strong>Theme sync:</strong> Dashboard uses the same palette and typography as the main site.
+      </div>
+    </aside>
+
+    <main class="admin-content">
+      <section class="admin-top" id="analytics">
+        <div>
+          <span class="eyebrow">Admin dashboard</span>
+          <h1>Rental analytics overview</h1>
+          <p>Monitor demand, inventory, and customer engagement.</p>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary" type="button">Download Report</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="card-grid">
+          <article class="card centered">
+            <div class="icon-badge"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Occupancy</h3>
+            <p>84% active inventory</p>
+          </article>
+          <article class="card centered">
+            <div class="icon-badge"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h3>Weekly growth</h3>
+            <p>+18% rental demand</p>
+          </article>
+          <article class="card centered">
+            <div class="icon-badge"><i class="fa-solid fa-user-check"></i></div>
+            <h3>Member retention</h3>
+            <p>92% renewal rate</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-grid">
+          <div class="chart-placeholder">
+            <h3>Revenue chart</h3>
+            <p>Chart placeholder for monthly revenue.</p>
+          </div>
+          <div class="chart-placeholder">
+            <h3>Inventory health</h3>
+            <p>Chart placeholder for gear readiness.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="users">
+        <div class="section-title">
+          <span class="eyebrow">Users</span>
+          <h2>New member signups</h2>
+        </div>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Plan</th>
+                  <th>Last rental</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Riley Chen</td>
+                  <td>Summit</td>
+                  <td>June 26</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Jordan Patel</td>
+                  <td>Explorer</td>
+                  <td>June 20</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Morgan Diaz</td>
+                  <td>Elite</td>
+                  <td>June 18</td>
+                  <td>Pending</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="orders">
+        <div class="section-title">
+          <span class="eyebrow">Orders</span>
+          <h2>Upcoming deliveries</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Denver Hub</h3>
+            <p>12 trail bike kits scheduled for 7/12</p>
+          </article>
+          <article class="card">
+            <h3>Seattle Hub</h3>
+            <p>8 water sport bundles scheduled for 7/13</p>
+          </article>
+          <article class="card">
+            <h3>Aspen Hub</h3>
+            <p>14 alpine kits scheduled for 7/14</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="messages">
+        <div class="section-title">
+          <span class="eyebrow">Messages</span>
+          <h2>Recent concierge requests</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Gear swap request</h3>
+            <p>Customer needs larger boots for weekend snow trip.</p>
+          </article>
+          <article class="card">
+            <h3>Route guidance</h3>
+            <p>Request for coastal cycling routes and gear list.</p>
+          </article>
+          <article class="card">
+            <h3>Delivery adjustment</h3>
+            <p>Hotel delivery time moved to 6:00 AM.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-grid">
+          <div>
+            <span class="eyebrow">Branding</span>
+            <h2>Brand assets preview</h2>
+            <p>Primary palette and typography match Crestline public pages.</p>
+          </div>
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80" alt="Brand gear preview" loading="lazy" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
