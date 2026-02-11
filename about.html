@@ -1,56 +1,65 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | Crestline Rentals</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body id="top">
+  <div class="nav-bar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
+        <span>Crestline Rentals</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <span>Theme</span>
+      </button>
+      <nav class="nav-panel" id="primary-nav" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home-2.html">Home 2</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="login.html">Login</a>
+          <a class="btn btn-primary" href="register.html">Sign Up</a>
+        </div>
+      </nav>
+      <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <span>Theme</span>
+      </button>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container">
-      <div class="nav-bar">
-        <a class="brand" href="index.html">
-          <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
-          <span>Crestline Rentals</span>
-        </a>
-                <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <span>Theme</span>
-        </button>
-        <nav class="nav-panel" id="primary-nav" data-nav>
-          <ul class="nav-list">
-            <li><a href="index.html">Home 1</a></li>
-            <li><a href="home-2.html">Home 2</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="nav-actions">
-            <a class="btn btn-primary" href="login.html">Login</a>
-            <a class="btn btn-primary" href="register.html">Sign Up</a></div>
-        </nav>
-        <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <span>Theme</span>
-        </button>
-      </div>
       <div class="hero">
         <div>
           <span class="eyebrow">Our story</span>
           <h1>Built by athletes who wanted better rentals.</h1>
-          <p>Crestline started with a single idea: access to elite gear should be effortless, clean, and reliable wherever you travel.</p>
+          <p>Crestline started with a single idea: access to elite gear should be effortless, clean, and reliable
+            wherever you travel.</p>
           <div class="btn-group">
             <a class="btn btn-primary" href="services.html">Explore Services</a>
             <a class="btn btn-outline" href="contact.html">Meet the Team</a>
@@ -61,7 +70,8 @@
             <span class="badge">Built by athletes</span>
             <h3>Values that keep every rental safe and ready</h3>
             <ul class="hero-list">
-              <li><i class="fa-solid fa-shield-heart"></i> Safety, reliability, and performance drive every decision</li>
+              <li><i class="fa-solid fa-shield-heart"></i> Safety, reliability, and performance drive every decision
+              </li>
               <li><i class="fa-solid fa-people-group"></i> Decades outfitting pros, teams, and adventure travelers</li>
               <li><i class="fa-solid fa-screwdriver-wrench"></i> Certified technicians set our equipment standards</li>
             </ul>
@@ -77,11 +87,14 @@
         <div>
           <span class="eyebrow">Brand story</span>
           <h2>From mountain huts to city hubs</h2>
-          <p>Our founders spent years traveling with oversized equipment bags. Crestline brings the same gear quality without the bulk, making adventures lighter and more accessible.</p>
-          <p>We build partnerships with elite brands and maintain a global network of service centers for reliable rentals.</p>
+          <p>Our founders spent years traveling with oversized equipment bags. Crestline brings the same gear quality
+            without the bulk, making adventures lighter and more accessible.</p>
+          <p>We build partnerships with elite brands and maintain a global network of service centers for reliable
+            rentals.</p>
         </div>
         <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1000&q=80" alt="Mountain travel inspiration" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1000&q=80"
+            alt="Mountain travel inspiration" loading="lazy" />
         </div>
       </div>
     </section>
@@ -110,7 +123,9 @@
     <section class="section">
       <div class="container section-grid">
         <div class="card-media">
-          <img src="https://c8.alamy.com/comp/WBR2XK/safety-first-sign-with-personal-protective-equipment-on-wooden-background-protection-and-safety-concept-WBR2XK.jpg" alt="Safety-first equipment checks" loading="lazy" />
+          <img
+            src="https://c8.alamy.com/comp/WBR2XK/safety-first-sign-with-personal-protective-equipment-on-wooden-background-protection-and-safety-concept-WBR2XK.jpg"
+            alt="Safety-first equipment checks" loading="lazy" />
         </div>
         <div>
           <span class="eyebrow">Quality and safety</span>
@@ -236,18 +251,18 @@
     </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 Crestline Rentals. All rights reserved.</p>
-      <div class="social">
-        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div class="footer-bottom-right">
+        <div class="social">
+          <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a class="back-to-top" href="#top">Back to Top</a>
       </div>
-      <a class="back-to-top" href="#top">Back to Top</a>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
-

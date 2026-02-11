@@ -1,56 +1,65 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home 1 | Crestline Rentals</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body id="top">
+  <div class="nav-bar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
+        <span>Crestline Rentals</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <span>Theme</span>
+      </button>
+      <nav class="nav-panel" id="primary-nav" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home-2.html">Home 2</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="login.html">Login</a>
+          <a class="btn btn-primary" href="register.html">Sign Up</a>
+        </div>
+      </nav>
+      <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <span>Theme</span>
+      </button>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container">
-      <div class="nav-bar">
-        <a class="brand" href="index.html">
-          <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
-          <span>Crestline Rentals</span>
-        </a>
-                <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <span>Theme</span>
-        </button>
-        <nav class="nav-panel" id="primary-nav" data-nav>
-          <ul class="nav-list">
-            <li><a href="index.html">Home 1</a></li>
-            <li><a href="home-2.html">Home 2</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="nav-actions">
-            <a class="btn btn-primary" href="login.html">Login</a>
-            <a class="btn btn-primary" href="register.html">Sign Up</a></div>
-        </nav>
-        <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <span>Theme</span>
-        </button>
-      </div>
       <div class="hero">
         <div>
           <span class="eyebrow">Premium sports rentals</span>
           <h1>Rent elite equipment that moves with your season.</h1>
-          <p>Skip storage and maintenance. Crestline curates, tunes, and delivers pro-grade sports gear so every trip feels first-class.</p>
+          <p>Skip storage and maintenance. Crestline curates, tunes, and delivers pro-grade sports gear so every trip
+            feels first-class.</p>
           <div class="btn-group">
             <a class="btn btn-primary" href="services.html">Browse Categories</a>
             <a class="btn btn-outline" href="service-details.html">Build Your Kit</a>
@@ -92,7 +101,8 @@
             <h3>Performance Cycling</h3>
             <p>Carbon bikes, helmets, and tool kits for every trail grade.</p>
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Cycling equipment" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
+                alt="Cycling equipment" loading="lazy" />
             </div>
           </article>
           <article class="card centered hoverable">
@@ -100,7 +110,8 @@
             <h3>Snow and Alpine</h3>
             <p>Boards, skis, boots, and heated layers for peak conditions.</p>
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=800&q=80" alt="Snowboard rental gear" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=800&q=80"
+                alt="Snowboard rental gear" loading="lazy" />
             </div>
           </article>
           <article class="card centered hoverable">
@@ -108,7 +119,8 @@
             <h3>Water Sports</h3>
             <p>Kayaks, paddleboards, and safety vests for open water.</p>
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" alt="Kayak on water" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80"
+                alt="Kayak on water" loading="lazy" />
             </div>
           </article>
           <article class="card centered hoverable">
@@ -116,7 +128,8 @@
             <h3>Court Sports</h3>
             <p>Rackets, balls, and performance shoes for court days.</p>
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=800&q=80" alt="Tennis equipment" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=800&q=80"
+                alt="Tennis equipment" loading="lazy" />
             </div>
           </article>
           <article class="card centered hoverable">
@@ -124,7 +137,8 @@
             <h3>Trail and Trek</h3>
             <p>Packs, poles, and GPS trackers for long routes.</p>
             <div class="card-media">
-              <img src="https://t4.ftcdn.net/jpg/02/42/16/69/360_F_242166938_hOm0zSOo0SxqWH9DBrCdwGSWKoW3xceU.jpg" alt="Hiking trail equipment" loading="lazy" />
+              <img src="https://t4.ftcdn.net/jpg/02/42/16/69/360_F_242166938_hOm0zSOo0SxqWH9DBrCdwGSWKoW3xceU.jpg"
+                alt="Hiking trail equipment" loading="lazy" />
             </div>
           </article>
           <article class="card centered hoverable">
@@ -132,7 +146,8 @@
             <h3>Training Studios</h3>
             <p>Portable fitness kits for hotel gyms and home setups.</p>
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Fitness equipment" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
+                alt="Fitness equipment" loading="lazy" />
             </div>
           </article>
         </div>
@@ -173,7 +188,7 @@
           <h2>Premium gear, concierge-level support</h2>
           <p>Our rental experts keep every kit dialed in so you can focus on the experience.</p>
         </div>
-        <div class="card-grid">
+        <div class="card-grid grid-4">
           <article class="card centered hoverable">
             <div class="icon-badge"><i class="fa-solid fa-shield"></i></div>
             <h3>Safety certified</h3>
@@ -205,10 +220,11 @@
           <h2>Top-requested equipment this season</h2>
           <p>Our most-loved kits for mountain, water, and endurance trips.</p>
         </div>
-        <div class="card-grid">
+        <div class="card-grid grid-4">
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80" alt="Trail bike" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80"
+                alt="Trail bike" loading="lazy" />
             </div>
             <h3>Carbon Trail Bike Kit</h3>
             <p>Full-suspension bike, helmet, and repair pack.</p>
@@ -218,7 +234,8 @@
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=800&q=80" alt="Snowboard kit" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=800&q=80"
+                alt="Snowboard kit" loading="lazy" />
             </div>
             <h3>Powder Snowboard Set</h3>
             <p>Board, bindings, boots, and heated layers.</p>
@@ -228,7 +245,8 @@
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=800&q=80" alt="Surfboard rental" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=800&q=80"
+                alt="Surfboard rental" loading="lazy" />
             </div>
             <h3>Surf Performance Pack</h3>
             <p>Surfboard quiver, wetsuit, and wax bundle.</p>
@@ -238,7 +256,8 @@
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://www.coloradoviaferrata.com/wp-content/uploads/2023/08/9R7A9352-2-scaled-1.jpg" alt="Climbing gear" loading="lazy" />
+              <img src="https://www.coloradoviaferrata.com/wp-content/uploads/2023/08/9R7A9352-2-scaled-1.jpg"
+                alt="Climbing gear" loading="lazy" />
             </div>
             <h3>Cliffside Climb Kit</h3>
             <p>Harness, rope system, and belay essentials.</p>
@@ -281,7 +300,8 @@
           </ul>
         </div>
         <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80" alt="Sports equipment maintenance" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80"
+            alt="Sports equipment maintenance" loading="lazy" />
         </div>
       </div>
     </section>
@@ -296,21 +316,25 @@
         <div class="card-grid">
           <article class="card centered hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Winter rental bundle" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+                alt="Winter rental bundle" loading="lazy" />
             </div>
             <h3>Winter summit pass</h3>
             <p>Multi-day ski and board kits with premium boot fitting.</p>
           </article>
           <article class="card centered hoverable">
             <div class="card-media">
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/044/649/265/small/path-through-park-alley-with-green-grass-and-apple-trees-on-sunset-photo.jpg" alt="Spring trail bundle" loading="lazy" />
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/044/649/265/small/path-through-park-alley-with-green-grass-and-apple-trees-on-sunset-photo.jpg"
+                alt="Spring trail bundle" loading="lazy" />
             </div>
             <h3>Spring trail pack</h3>
             <p>Lightweight trekking gear with GPS and hydration set.</p>
           </article>
           <article class="card centered hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Summer water bundle" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                alt="Summer water bundle" loading="lazy" />
             </div>
             <h3>Summer water bundle</h3>
             <p>Kayak and paddleboard rentals with safety vests.</p>
@@ -371,18 +395,18 @@
     </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 Crestline Rentals. All rights reserved.</p>
-      <div class="social">
-        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div class="footer-bottom-right">
+        <div class="social">
+          <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a class="back-to-top" href="#top">Back to Top</a>
       </div>
-      <a class="back-to-top" href="#top">Back to Top</a>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
-

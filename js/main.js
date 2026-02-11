@@ -2,7 +2,7 @@
   const root = document.documentElement;
   const themeButtons = document.querySelectorAll("[data-theme-toggle]");
   const navToggle = document.querySelector("[data-nav-toggle]");
-  const header = document.querySelector(".site-header");
+  const navContainer = document.querySelector(".nav-bar");
 
   const setTheme = (theme) => {
     root.dataset.theme = theme;
@@ -26,24 +26,31 @@
     });
   });
 
-  if (navToggle && header) {
+  if (navToggle && navContainer) {
     navToggle.addEventListener("click", () => {
       const expanded = navToggle.getAttribute("aria-expanded") === "true";
       navToggle.setAttribute("aria-expanded", String(!expanded));
-      header.classList.toggle("nav-open");
+      navContainer.classList.toggle("nav-open");
     });
   }
 
   const navLinks = document.querySelectorAll(".nav-panel a");
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (header && header.classList.contains("nav-open")) {
-        header.classList.remove("nav-open");
+      if (navContainer && navContainer.classList.contains("nav-open")) {
+        navContainer.classList.remove("nav-open");
         if (navToggle) {
           navToggle.setAttribute("aria-expanded", "false");
         }
       }
     });
+
+    // Highlight active link
+    const currentPath = window.location.pathname;
+    const pageName = currentPath.split("/").pop() || "index.html";
+    if (link.getAttribute("href") === pageName) {
+      link.classList.add("active");
+    }
   });
 
   // Entrance animation observer
@@ -81,4 +88,16 @@
   } else {
     animTargets.forEach((el) => el.classList.add("animate-in"));
   }
+  // Password visibility toggle
+  const passwordToggles = document.querySelectorAll(".password-toggle");
+  passwordToggles.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const input = btn.previousElementSibling;
+      if (input && (input.type === "password" || input.type === "text")) {
+        const isVisible = input.type === "text";
+        input.type = isVisible ? "password" : "text";
+        btn.classList.toggle("is-visible", !isVisible);
+      }
+    });
+  });
 })();

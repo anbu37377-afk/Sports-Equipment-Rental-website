@@ -1,51 +1,59 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog | Crestline Rentals</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body id="top">
+  <div class="nav-bar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
+        <span>Crestline Rentals</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <span>Theme</span>
+      </button>
+      <nav class="nav-panel" id="primary-nav" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home-2.html">Home 2</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="login.html">Login</a>
+          <a class="btn btn-primary" href="register.html">Sign Up</a>
+        </div>
+      </nav>
+      <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+        <span>Theme</span>
+      </button>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container">
-      <div class="nav-bar">
-        <a class="brand" href="index.html">
-          <span class="logo-mark"><i class="fa-solid fa-person-skiing"></i></span>
-          <span>Crestline Rentals</span>
-        </a>
-                <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button class="theme-toggle mobile-toggle mobile-header-toggle" data-theme-toggle aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <span>Theme</span>
-        </button>
-        <nav class="nav-panel" id="primary-nav" data-nav>
-          <ul class="nav-list">
-            <li><a href="index.html">Home 1</a></li>
-            <li><a href="home-2.html">Home 2</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="nav-actions">
-            <a class="btn btn-primary" href="login.html">Login</a>
-            <a class="btn btn-primary" href="register.html">Sign Up</a></div>
-        </nav>
-        <button class="theme-toggle desktop-toggle" data-theme-toggle aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <span>Theme</span>
-        </button>
-      </div>
       <div class="hero">
         <div>
           <span class="eyebrow">Crestline journal</span>
@@ -118,7 +126,9 @@
         </div>
         <article class="split-card section-grid">
           <div class="card-media">
-            <img src="https://images.squarespace-cdn.com/content/v1/671754ec43306f623d7df2d2/e3baa07c-0778-46f3-8650-221815ac5d62/Podcast+Network+Asia+Logo.png" alt="Featured trail story" loading="lazy" />
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/671754ec43306f623d7df2d2/e3baa07c-0778-46f3-8650-221815ac5d62/Podcast+Network+Asia+Logo.png"
+              alt="Featured trail story" loading="lazy" />
           </div>
           <div>
             <span class="badge">Adventure</span>
@@ -141,42 +151,50 @@
         <div class="card-grid">
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://vertical-addiction.com/cdn/shop/articles/00-master-ice-rock-mixed-climb-transition-guide_360c14a3-d23f-4a86-b6af-b8e44fae71c5.webp?v=1761768652" alt="Climbing gear prep" loading="lazy" />
+              <img
+                src="https://vertical-addiction.com/cdn/shop/articles/00-master-ice-rock-mixed-climb-transition-guide_360c14a3-d23f-4a86-b6af-b8e44fae71c5.webp?v=1761768652"
+                alt="Climbing gear prep" loading="lazy" />
             </div>
             <h3>Climb-ready checklist for weekend trips</h3>
             <p>Everything you need to pack for safe ascents.</p>
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=900&q=80" alt="Snow gear" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=900&q=80"
+                alt="Snow gear" loading="lazy" />
             </div>
             <h3>Choosing the right snowboard for powder days</h3>
             <p>Board shapes and flex profiles explained.</p>
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=900&q=80" alt="Water sports kit" loading="lazy" />
+              <img
+                src="https://sportal365images.com/process/smp-images-production/ringier.africa/11042024/89a250cf-6dde-40ef-a369-37abc3d92bec.jpg"
+                alt="Kayaking on water" loading="lazy" />
             </div>
             <h3>Water safety tips for kayak rentals</h3>
             <p>Confidence and safety basics for first-timers.</p>
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Training essentials" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
+                alt="Training essentials" loading="lazy" />
             </div>
             <h3>Travel workouts that keep you ready</h3>
             <p>Lightweight fitness kits that fit in carry-ons.</p>
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80" alt="Cycling routes" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
+                alt="Cycling routes" loading="lazy" />
             </div>
             <h3>Best scenic cycling routes for rentals</h3>
             <p>Top destinations for smooth, safe rides.</p>
           </article>
           <article class="card hoverable">
             <div class="card-media">
-              <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=900&q=80" alt="Surfboard selection" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=900&q=80"
+                alt="Surfboard selection" loading="lazy" />
             </div>
             <h3>Surfboard sizing for new renters</h3>
             <p>Find the right board before you paddle out.</p>
@@ -207,7 +225,7 @@
         <span class="eyebrow">Newsletter</span>
         <h2>Get weekly rental insights</h2>
         <p>Travel-ready gear tips and destination guides sent to your inbox.</p>
-        <form class="form-grid">
+        <form class="form-grid form-narrow">
           <div class="input-group">
             <label for="email">Email address</label>
             <input id="email" type="email" placeholder="you@example.com" />
@@ -259,18 +277,18 @@
     </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 Crestline Rentals. All rights reserved.</p>
-      <div class="social">
-        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div class="footer-bottom-right">
+        <div class="social">
+          <a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a class="back-to-top" href="#top">Back to Top</a>
       </div>
-      <a class="back-to-top" href="#top">Back to Top</a>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
-
