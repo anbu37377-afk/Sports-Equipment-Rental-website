@@ -730,6 +730,7 @@ p {
 .input-group {
   display: grid;
   gap: 0.4rem;
+  text-align: center;
 }
 
 .password-wrapper {
@@ -1139,7 +1140,7 @@ iframe {
     display: none;
   }
 
-  .site-header.nav-open .nav-panel {
+  .nav-bar.nav-open .nav-panel {
     display: flex;
   }
 
