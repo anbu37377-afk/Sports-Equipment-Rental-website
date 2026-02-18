@@ -32,7 +32,28 @@
   --auth-input: #f2ede5;
   --auth-placeholder: rgba(242, 237, 229, 0.6);
   --auth-link: #f2ede5;
+  color-scheme: dark;
 }
+
+[data-theme="dark"] select option {
+  background-color: #132c52;
+  /* Matching --color-surface-strong */
+  color: #f2ede5;
+  /* Matching --color-ink */
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background-color: var(--color-surface-strong);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: rgba(242, 237, 229, 0.5);
+}
+
+
 
 *,
 *::before,
@@ -428,14 +449,16 @@ p {
 }
 
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.8rem;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--color-tertiary);
   text-decoration: none;
+  white-space: nowrap;
 }
+
 
 .logo-mark {
   width: 2.8rem;
@@ -446,7 +469,9 @@ p {
   display: grid;
   place-items: center;
   color: var(--color-secondary);
+  flex-shrink: 0;
 }
+
 
 .nav-toggle {
   display: none;
@@ -995,15 +1020,25 @@ iframe {
   color: #ffffff !important;
 }
 
-.auth-card input {
+.auth-card input,
+.auth-card select,
+.auth-card textarea {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+}
+
+.auth-card select option {
+  background: #000000;
   color: #ffffff;
 }
 
-.auth-card input::placeholder {
+
+.auth-card input::placeholder,
+.auth-card textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+
 
 .auth-page-wrapper {
   min-height: 100vh;
