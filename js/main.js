@@ -53,6 +53,29 @@
     }
   });
 
+  const alignFooterBrandWithHeader = () => {
+    const headerBrand = document.querySelector(".nav-bar .brand");
+    const footerBrandBlock = document.querySelector(".site-footer .footer-grid > div:first-child");
+    if (!headerBrand || !footerBrandBlock) return;
+
+    footerBrandBlock.style.marginLeft = "0px";
+
+    const headerLeft = headerBrand.getBoundingClientRect().left;
+    const footerLeft = footerBrandBlock.getBoundingClientRect().left;
+    let shift = headerLeft - footerLeft;
+
+    // Prevent shifting past the viewport's left edge.
+    shift = Math.max(-footerLeft, shift);
+    footerBrandBlock.style.marginLeft = `${shift}px`;
+  };
+
+  alignFooterBrandWithHeader();
+  window.addEventListener("resize", alignFooterBrandWithHeader);
+  window.addEventListener("load", alignFooterBrandWithHeader);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(alignFooterBrandWithHeader);
+  }
+
   // Entrance animation observer
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const animTargets = document.querySelectorAll(

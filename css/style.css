@@ -545,6 +545,10 @@ p {
   transform: translateY(-0.1rem);
 }
 
+.desktop-toggle {
+  margin-right: 0.75rem;
+}
+
 .theme-toggle .fa-sun {
   display: none;
 }
@@ -910,6 +914,12 @@ iframe {
 
 .site-footer .brand {
   margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.site-footer .brand .logo-mark {
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 .footer-grid {
