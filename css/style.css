@@ -974,6 +974,10 @@ iframe {
   margin-bottom: 2rem;
 }
 
+.footer-grid > :first-child {
+  padding-left: clamp(1rem, 3vw, 1.5rem);
+}
+
 .footer-grid h4 {
   margin-bottom: 0.8rem;
 }
