@@ -288,6 +288,32 @@ p {
   align-items: stretch;
 }
 
+@media (min-width: 29.6rem) and (max-width: 45.1875rem) {
+  .card-grid > :last-child:nth-child(2n + 1):not(:only-child) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 45.2rem) and (max-width: 60.75rem) {
+  .card-grid:not(.grid-4) > :last-child:nth-child(3n + 1):not(:only-child) {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 60.8rem) {
+  .card-grid > :last-child:nth-child(4n + 1):not(:only-child) {
+    grid-column: 2 / span 2;
+  }
+
+  .card-grid > :nth-child(4n + 1):nth-last-child(2):not(:first-child) {
+    grid-column: 2;
+  }
+
+  .card-grid > :last-child:nth-child(4n + 2):not(:nth-child(2)) {
+    grid-column: 3;
+  }
+}
+
 /* Force 4 or 2 columns to avoid the "lone card" in 3+1 layouts */
 .grid-4 {
   grid-template-columns: repeat(1, 1fr);
@@ -362,6 +388,21 @@ p {
   height: clamp(10rem, 15vw, 12rem);
   object-fit: cover;
   border-radius: var(--radius-md);
+}
+
+.category-grid .card-media,
+.blog-post-grid .card-media {
+  width: 100%;
+}
+
+.category-grid .card-media {
+  margin-top: auto;
+}
+
+.category-grid .card-media img,
+.blog-post-grid .card-media img {
+  height: auto;
+  aspect-ratio: 4 / 3;
 }
 
 .section-grid .card-media img {
@@ -906,6 +947,10 @@ iframe {
   background: var(--color-primary);
   color: var(--color-tertiary);
   padding-block: 4rem 2rem;
+}
+
+.site-footer .container {
+  padding-inline: clamp(1rem, 3vw, 1.5rem);
 }
 
 .site-footer p {
