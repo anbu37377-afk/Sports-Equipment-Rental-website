@@ -21,9 +21,9 @@
 [data-theme="dark"] {
   --color-ink: #f2ede5;
   --color-ink-muted: rgba(242, 237, 229, 0.72);
-  --color-surface: #0b1f3a;
-  --color-surface-strong: #132c52;
-  --color-surface-alt: #0f2546;
+  --color-surface: #0a0a0a;
+  --color-surface-strong: #161616;
+  --color-surface-alt: #222222;
   --color-border: rgba(242, 237, 229, 0.2);
   --shadow-soft: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
   --shadow-card: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.35);
@@ -36,10 +36,14 @@
 }
 
 [data-theme="dark"] select option {
-  background-color: #132c52;
+  background-color: #161616;
   /* Matching --color-surface-strong */
   color: #f2ede5;
   /* Matching --color-ink */
+}
+
+[data-theme="dark"] .section-contrast {
+  background: #000000;
 }
 
 [data-theme="dark"] input,
@@ -95,6 +99,42 @@ img {
   }
 }
 
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .will-animate {
   opacity: 1;
   transform: none;
@@ -102,9 +142,22 @@ img {
   will-change: opacity, transform;
 }
 
+[data-anim="bloom"].will-animate.animate-in,
 .will-animate.animate-in {
   animation: bloom-slide 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: var(--anim-delay, 0ms);
+}
+
+[data-anim="fade-up"].will-animate.animate-in {
+  animation-name: fade-up;
+}
+
+[data-anim="fade-left"].will-animate.animate-in {
+  animation-name: fade-left;
+}
+
+[data-anim="zoom-in"].will-animate.animate-in {
+  animation-name: zoom-in;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -289,27 +342,27 @@ p {
 }
 
 @media (min-width: 29.6rem) and (max-width: 45.1875rem) {
-  .card-grid > :last-child:nth-child(2n + 1):not(:only-child) {
+  .card-grid> :last-child:nth-child(2n + 1):not(:only-child) {
     grid-column: 1 / -1;
   }
 }
 
 @media (min-width: 45.2rem) and (max-width: 60.75rem) {
-  .card-grid:not(.grid-4) > :last-child:nth-child(3n + 1):not(:only-child) {
+  .card-grid:not(.grid-4)> :last-child:nth-child(3n + 1):not(:only-child) {
     grid-column: 2;
   }
 }
 
 @media (min-width: 60.8rem) {
-  .card-grid > :last-child:nth-child(4n + 1):not(:only-child) {
+  .card-grid> :last-child:nth-child(4n + 1):not(:only-child) {
     grid-column: 2 / span 2;
   }
 
-  .card-grid > :nth-child(4n + 1):nth-last-child(2):not(:first-child) {
+  .card-grid> :nth-child(4n + 1):nth-last-child(2):not(:first-child) {
     grid-column: 2;
   }
 
-  .card-grid > :last-child:nth-child(4n + 2):not(:nth-child(2)) {
+  .card-grid> :last-child:nth-child(4n + 2):not(:nth-child(2)) {
     grid-column: 3;
   }
 }
@@ -974,7 +1027,7 @@ iframe {
   margin-bottom: 2rem;
 }
 
-.footer-grid > :first-child {
+.footer-grid> :first-child {
   padding-left: clamp(1rem, 3vw, 1.5rem);
 }
 

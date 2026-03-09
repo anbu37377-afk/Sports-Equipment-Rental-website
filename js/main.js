@@ -83,7 +83,23 @@
   );
 
   animTargets.forEach((el) => {
-    el.dataset.anim = "bloom";
+    if (!el.dataset.anim) {
+      if (el.classList.contains('hero')) {
+        el.dataset.anim = 'fade-right';
+      } else if (el.closest('.hero')) {
+        if (el.classList.contains('btn-group') || el.classList.contains('btn')) {
+          el.dataset.anim = 'zoom-in';
+        } else if (el.classList.contains('hero-meta')) {
+          el.dataset.anim = 'fade-up';
+        } else if (el.classList.contains('hero-info')) {
+          el.dataset.anim = 'fade-left';
+        } else {
+          el.dataset.anim = 'fade-up';
+        }
+      } else {
+        el.dataset.anim = "bloom";
+      }
+    }
     el.classList.add("will-animate");
   });
 
